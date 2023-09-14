@@ -15,8 +15,8 @@ st.set_page_config(layout="wide")
 FILE_BUFFER = io.BytesIO()
 #CLAIM_SECRETS = st.secrets["CLAIM_SECRETS"]
 API_URL = st.secrets["API_URL"]
-SECRETS_MAP = {"Juntoz": 0}
-CLIENTS_MAP = {0: "Juntoz"}
+SECRETS_MAP = {"Oriflame": 0}
+CLIENTS_MAP = {0: "Oriflame"}
 
 statuses = {
     'delivered': {'type': '4. delivered', 'state': 'in progress'},
@@ -186,7 +186,7 @@ def get_report(CLAIM_SECRETS, period, start_, end_) -> pandas.DataFrame:
     return result_frame
 
 
-st.markdown(f"# Informe de rutas para Juntoz")
+st.markdown(f"# Informe de rutas para Oriflame")
 
 CLAIM_SECRETS=[]
 CLAIM_SECRETS.append(st.text_input("Por favor ingrese el token API",value=""))
